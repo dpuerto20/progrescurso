@@ -33,11 +33,11 @@ const nuevousuario: Persona = {
   nombre: "caramelo",
   dinero: 100,
   mostrardonacion(){
-      console.log ( 'donacion:',this.dinero);
+      console.log ( `el dinero de ${this.nombre} es : `  ,this.dinero);
   }
 
 
 }
 
-donar(nuevousuario,20);
+donar(nuevousuario,900);
 nuevousuario.mostrardonacion();

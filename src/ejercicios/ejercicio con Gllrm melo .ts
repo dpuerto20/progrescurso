@@ -2,16 +2,16 @@ let materias: [];
 
 interface Materia {
   nombre: string;
-  profesor: {
-    nombre: string;
-    edad: number;
-    estado?: boolean;
-  };
+  profesor: Profesor,
 
   intensidad: number;
   horario: string[];
 }
-
+interface Profesor {
+  nombre:string,
+  edad:number,
+  estado:boolean,
+}
 const english: Materia = {
   nombre: "english",
   horario: ["lunes", "martes", "miercoles"],
@@ -19,7 +19,7 @@ const english: Materia = {
   profesor: {
     nombre: "juan de Dios ",
     edad: 56,
-    estado: true,
+    estado:true,
   },
 };
 
